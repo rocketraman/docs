@@ -1,10 +1,11 @@
 # Using ADB with Waydroid
 
-Grab waydroid IP address from **Android Settings-> About**
+Ensure that `/var/lib/waydroid/waydroid.cfg` contains `auto_adb = True` in the `[waydroid]` section.
 
-And start adb:
+Grab the waydroid IP address from **Android Settings-> About**
+
+And use it to connect via adb:
 
 ```
 adb connect <IP>:5555
 ```
-
